@@ -51,6 +51,14 @@ body {
     text-align: center;
 }
 
+.sticky {
+    height: 100vh;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .skill-bar {
     background: #1c1c1a;
     width: 680px;
@@ -60,7 +68,17 @@ body {
     border-top: 1px solid #8d8d8b;
     border-right: 1px solid #8d8d8b;
     display: flex;
+    margin-top: auto;
 }
+
+  
+  .transformed-state {
+    transform: translate(-340px, -340px) rotate(-90deg);
+  }
+
+  .transformed-state2 {
+    transform: rotate(90deg);
+  }
 
 .more {
     display: flex;
@@ -146,6 +164,10 @@ body {
     margin-right: 8px;
 }
 
+.skill-12:hover {
+    cursor: pointer;
+}
+
 .skill p {
     font-size: 13px;
     font-weight: 500;
@@ -221,20 +243,125 @@ body {
 }
 
 .soulshot {
-    width: 19px;
+    width: 20px;
     height: 40px;
     background: linear-gradient(90deg, #061f3e 15%, #164366, #306db6, #82aeeb);
     border-radius: 45% / 30%;
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: rotate(45deg);
     
 }
 
 .black-rect {
-    /* background: #0c0800; */
     background: linear-gradient(90deg,#483720, #d3b97b);
     width: 100%;
     height: 45%;
     border-radius: 100% / 5%;
+}
+
+.rect {
+    background: #0c0800;
+    position: absolute;
+    filter: drop-shadow(1px 1px 2px #291609);
+}
+
+.rect:not(.rect-4):not(.rect-6):not(.rect-7):not(.rect-9) {
+    background: transparent;
+    width: 0;
+    height: 0;
+}
+.rect-4,
+.rect-6,
+.rect-7,
+.rect-9 {
+    width: 4px;
+    height: 4px;
+    transform: rotate(45deg);
+}
+
+.rect-1 {
+    border-top: 3px solid transparent;
+    border-left: 3px solid #0c0800;
+    border-bottom: 3px solid transparent;
+    margin-left: 1px;
+    margin-top: 2px;
+}
+
+.rect-2 {
+    border-top: 3px solid transparent;
+    border-left: 3px solid #0c0800;
+    border-bottom: 3px solid transparent;
+    margin-left: 1px;
+    margin-top: 10px;
+}
+
+
+.rect-3 {
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 3px solid #0c0800;
+    margin-left: 3px;
+    margin-top: 1px;
+}
+
+.rect-4 {
+    margin-left: 4px;
+    margin-top: 6.9px;
+}
+
+.rect-5 {
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid #0c0800;
+    margin-left: 3px;
+    margin-top: 14px;
+}
+
+.rect-6 {
+    margin-left: 8px;
+    margin-top: 2.9px;
+}
+
+.rect-7 {
+    margin-left: 8px;
+    margin-top: 10.9px;
+}
+
+.rect-8 {
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 3px solid #0c0800;
+    margin-left: 12px;
+    margin-top: 1px;
+}
+
+.rect-9 {
+    margin-left: 12px;
+    margin-top: 6.9px;
+}
+
+.rect-10 {
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid #0c0800;
+    margin-left: 12px;
+    margin-top: 14px;
+}
+
+.rect-11 {
+    border-top: 3px solid transparent;
+    border-right: 3px solid #0c0800;
+    border-bottom: 3px solid transparent;
+    margin-left: 16px;
+    margin-top: 2px;
+}
+
+.rect-12 {
+    border-top: 3px solid transparent;
+    border-right: 3px solid #0c0800;
+    border-bottom: 3px solid transparent;
+    margin-left: 16px;
+    margin-top: 10px;
 }
